@@ -29,9 +29,13 @@ Zadania są testowane za pomocą **testów automatycznych**. Zwróć zatem uwag�
 
 ## Przygotowanie
 
-> W głównym katalogu repozytorium uruchom komendę `npm install` aby zainstalować wszystkie niezbędne zależności. Egzamin korzysta z konfiguracji Create React App, dlatego nie ma tutaj dostępu do pliku `webpack.config.js`.  
+> W głównym katalogu repozytorium uruchom komendę `npm install` aby zainstalować wszystkie niezbędne zależności. Wszystkie zależności potrzebne do wykonania egzaminu są wprowadzone do pliku `package.json` dlatego wytarczy uruchomić komendę `npm install`.
+> 
+> Plik `webpack.config.js` też został już przygotowany do specyfiki tego egzaminu. Nie ma potrzeby jego edytowania.
 >
 > Aby uruchomić projekt, należy po instalacji, wpisać w terminalu `npm start`. Projekt uruchomi serwer deweloperski. 
+>
+> **UWAGA!** Jeżeli podczas uruchomienia komendy `npm start` pojawi się komunikat: `Error: listen EADDRINUSE: address already in use`, należy zmienić wartość klucza `port` w pliku `webpack.config.js`, np. na `3002` i uruchomić serwer ponownie (`npm start`). Wtedy będzie osiągalny pod adresem: `http://localhost:3002`.
 
 ---
 
@@ -72,6 +76,8 @@ W razie błędnej ścieżki np. `/to/nie/jest/poprawna/ścieżka` wyrenderuj kom
 
 Komponent `NotFound` powinien renderować: `<h1>404 - nie znaleziono strony</h1>`.
 
+---
+
 # Zadanie 2 - Dodawanie i usuwanie rakiety
 Aplikacja rocket launch ma służyć do symulacji odpalania rakiet z platformy startowej. 
 W tym zadaniu należy przygotować warstwę stanu aplikacji `store` dla dodawania i usuwania rakiet z platformy.
@@ -97,6 +103,8 @@ Zaimplementuj reducer tak aby reagował na akcje `ADD_ROCKET` (dodanie nowej rak
 
 Akcja usuwania ma usuwać ostatnio dodaną rakietę (tę z końca listy).
 
+---
+
 # Zadanie 3 - connect Platform
 Zaimplementuj stworzony w zadaniu 1 komponent `Platform`. Ma on realizować następujące funckje:
 
@@ -107,6 +115,8 @@ Zaimplementuj stworzony w zadaniu 1 komponent `Platform`. Ma on realizować nast
 Połącz Platformę ze storem. Przekaż odpowiednie metody do dodawania i usuwania rakiety.
 
 ![](./add-remove.gif)
+
+---
 
 # Zadanie 4 - odpalanie rakiet
 Każda z rakiet ma przycisk `Launch`. Zaimplementuj akcję odpalania rakiety. Po kliknięciu przycisku `Launch` zacznij odliczanie.
