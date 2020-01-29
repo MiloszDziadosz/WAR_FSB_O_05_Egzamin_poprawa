@@ -39,7 +39,7 @@ Zadania są testowane za pomocą **testów automatycznych**. Zwróć zatem uwag�
 
 ---
 
-# Zadanie 1 - Routing
+## Zadanie 1 - Routing (5 pkt.)
 W pliku `components/App.js` zaimplementuj prosty routing. Powinien składać się z trzech ścieżek
 
 - `/` - strona główna
@@ -78,7 +78,7 @@ Komponent `NotFound` powinien renderować: `<h1>404 - nie znaleziono strony</h1>
 
 ---
 
-# Zadanie 2 - Dodawanie i usuwanie rakiety
+## Zadanie 2 - Dodawanie i usuwanie rakiety (5 pkt.)
 Aplikacja rocket launch ma służyć do symulacji odpalania rakiet z platformy startowej. 
 W tym zadaniu należy przygotować warstwę stanu aplikacji `store` dla dodawania i usuwania rakiet z platformy.
 
@@ -105,7 +105,7 @@ Akcja usuwania ma usuwać ostatnio dodaną rakietę (tę z końca listy).
 
 ---
 
-# Zadanie 3 - connect Platform
+## Zadanie 3 - connect Platform (4 pkt.)
 Zaimplementuj stworzony w zadaniu 1 komponent `Platform`. Ma on realizować następujące funckje:
 
 - wyświetlanie przycisku `<button>Dodaj rakietę</button>`
@@ -118,7 +118,7 @@ Połącz Platformę ze storem. Przekaż odpowiednie metody do dodawania i usuwan
 
 ---
 
-# Zadanie 4 - odpalanie rakiet
+## Zadanie 4 - odpalanie rakiet (6 pkt.)
 Każda z rakiet ma przycisk `Launch`. Zaimplementuj akcję odpalania rakiety. Po kliknięciu przycisku `Launch` zacznij odliczanie.
 Po rozpoczęciu odliczania guzik ma wyświetlać stan licznika od 4 do 0 (liczymy co sekundę). 
 Kiedy licznik dojdzie do zera ustaw flagę `launch` dla danej rakiety na true. Spowoduje to odpalenie rakiety.
