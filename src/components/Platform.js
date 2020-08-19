@@ -1,12 +1,16 @@
 import React from "react";
+import Rocket from "./Rocket"
+
+
 
 const Platform = () => (
   <div className="platform">
     <div className="platform__buttons">
-      Tutaj dodaj przyciski
+    <button type="submit" onClick={}>Dodaj</button>
+    <button type="submit" onClick={}>Usuń</button>
     </div>
     <div className="platform__rockets">
-      Tutaj wyrenderuj bezpośrednio komponenty "Rocket"
+      <Rocket/>
     </div>
   </div>
 );
